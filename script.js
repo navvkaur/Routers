@@ -4,8 +4,8 @@ const bodyParser=require('body-parser');
 
 const app = express();
 
-const adminRoutes = express('./Routes/admin');
-const shopRoutes = express('./Routes/shop');
+const adminRoutes = require('./Routes/admin');
+const shopRoutes = require('./Routes/shop');
 
 
 app.use(bodyParser.urlencoded({extended:false}));
